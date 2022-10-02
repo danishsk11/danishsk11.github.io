@@ -1,0 +1,152 @@
+:root{
+    --primary:#f08114;
+    --secondary:#231f3f;
+    --box-shadow:#d3d3d3;
+}
+.logo-img img{
+    width:100px;
+}
+
+nav ul{
+    display: flex;
+    padding: 0 100px;
+}
+nav ul li{
+    list-style-type: none;
+    padding: 0px 15px;
+}
+input[type="search"]{
+    border:none;
+    padding-left:25px;
+}
+.search-bar {
+    align-items: center;
+    position: relative;
+}
+input[type="search"]::placeholder{
+    padding-left: 3px;
+    
+}
+.search-bar i{
+    
+    position: absolute;
+    top: 6px;
+    left: 5px;
+}
+.search-bar img{
+    width: 20px;
+    position: absolute;
+    right: 12px;
+    top: 3px;
+}
+.active{
+    color:darkgray;
+}
+/* .......................................Hero Section....................................... */
+.delivery-img img{
+    width:25px;
+}
+.bike-delivery{
+    width: 150px;
+    background-color: bisque;
+    border-radius: 25px;
+}
+.bike-delivery span{
+    padding:0 7px;
+}
+ .delivery-content h1 span{
+    display:flex ;
+ }
+ .delivery-img{
+    padding: 0 7px;
+ }
+.delivery-content h1 span:nth-child(3){
+    color:var(--primary);
+    font-weight: bold;
+}
+.order-here{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+ .order-btn button{
+    background-color: var(--primary);
+    padding:10px 15px;
+    border-radius:10px;
+    border:none;
+    color:white;
+}
+.order-process-btn{
+    display: flex;
+    align-items: center;
+}
+ .order-process-btn button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffffd;
+    border:none;
+    box-shadow: 1px 6px 9px 0px #00000036;;
+}
+.order-process-btn button span{
+    clip-path: polygon(100% 48%, 0 0, 0 100%);
+    background-image:linear-gradient(to left,#ea790a,#f1902f);
+    width:15px;
+    height:15px;
+    display: inline-block;
+}
+/* ...............................................Item Section................................................... */
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card .item-img img{
+    width:140px;
+}
+.card .card-btn {
+    display: flex;
+    gap:20px;
+}
+.card-btn .back-btn button{
+    background-color: var(--secondary);
+    color:#fff;
+    border:none;
+}
+.card-btn .forward-btn button{
+    border:none;
+}
+.card-btn button{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+}
+/* .card .item-img img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    filter: drop-shadow(2px 4px 6px var(--box-shadow));
+} */
+/* .items .item-img img:nth-child(1){
+    filter: drop-shadow(2px 4px 6px black);
+} */
+/* .items{
+    padding-top: 76px;
+}
+.item-card{
+    padding-top: 75px;
+    padding-bottom: 25px;
+}
+.items .row{
+    row-gap: 100px;
+}
+.card-btn{
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+} */
