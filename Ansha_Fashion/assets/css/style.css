@@ -1,0 +1,946 @@
+
+body{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.stickey-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d3d3d3;
+    padding: 5px 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}
+.stickey-menu span:nth-child(3){
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+    border-radius: 10px;
+}
+.bi-plus-square{
+    font-size: 20px;
+}
+header .top-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid #f1f1f1;
+    padding:5px 0;
+}
+.top-left-header .contact{
+    display:flex;
+    gap:10px;
+    
+}
+.contact span{
+    color:#858585;
+}
+.contact span a{
+    color:#858585;
+    text-decoration: none;
+}
+
+.top-right-header .top-right-header-content{
+    display: flex;
+    gap:30px;
+}
+.top-right-header-content .social-media{
+    display: flex;
+    gap:20px;
+    color:#858585;
+}
+.login-here{
+    display: flex;
+    gap: 15px;
+}
+.login-here span:nth-child(2){
+    color:#858585;
+}
+
+.rupees{
+    display: flex;
+    gap: 15px;
+}
+.rupees span:nth-child(1){
+    color:#858585;
+}
+.language{
+    display: flex;
+    gap: 15px;
+}
+.language span:nth-child(1){
+    color:#858585;
+}
+.bottom-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom-middel-header-content{
+    display: flex;
+    align-items: center;
+}
+ .bottom-middel-header-content .logo-img img{
+    width:50px;
+}
+
+.logo-content span{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.logo-content span:nth-child(2){
+    color:#b79775;
+}
+.bottom-right-header-content{
+    display: flex;
+    gap: 20px;
+}
+.bottom-right-header-content .wishlist-img img{
+    width:25px;
+    
+}
+.wishlist-img{
+    position: relative;
+}
+.wishlist-img::before{
+    content: "3";
+    width:17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #b79775;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-right-header-content .wishlist{
+    display: flex;
+    gap: 10px;
+}
+.bottom-right-header-content .cart{
+    display: flex;
+    gap: 10px;
+}
+.bottom-right-header-content .cart-img img{
+    width:30px;
+}
+.cart-img{
+    position: relative;
+}
+.cart-img::after{
+    content: "3";
+    width:17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #b79775;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ..........................................SLIDER SECTION................................... */
+/* .slider-section{
+    background: url(../images/product-images/slide-1.jpg) ;
+    background-size: cover;
+    height: 400px;
+} */
+.slider{
+    padding:0 25px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color:#fff;
+    padding-top:10px;
+}
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    gap:18px;
+    padding:0;
+
+}
+nav ul li{
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight:500;
+    display: flex;
+    gap: 12px;
+   
+}
+nav ul li:nth-child(1){
+    border-bottom: 1px solid #b79775;
+}
+.right-nav-content{
+    display: flex;
+    gap: 15px;
+}
+
+
+/* ..............................................Slider Middel Content.............................................. */
+.slider-middel{
+    margin-top:20px;
+}
+.banners{
+    padding:0 58px;
+}
+.slider-middel-banner-left{
+    background: url(../images/banner-images/banner-1.jpg) 0% 50%;
+    background-size: cover;
+    height:350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+}
+.slider-middel-banner-right{
+    background: url(../images/banner-images/banner-2.jpg) 0% 0%;
+    background-size:cover;
+    height:350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+}
+.slider-middel-banner-left .banner-content-left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.slider-middel-banner-right .banner-content-right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.banner-content-left span{
+    background: #fff;
+    width: 145px;
+    height: 2px;
+}
+.banner-content-right span{
+    background: #fff;
+    width: 145px;
+    height: 2px;
+}
+/* ....................................................Shop Now section.................................................... */
+.show-now-section{
+    margin-top:20px;
+}
+.shop-now-left{
+    background: url(../images/banner-images/banner-3.jpg) 100% 0%;
+    background-size: cover;
+    height: 189px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+}
+.shop-now-left-content{
+    padding:15px 25px;
+}
+.shop-now-middel{
+    background: url(../images/banner-images/banner-4.jpg);
+    background-size: cover;
+    height: 189px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.shop-now-middel-content{
+    padding:15px 40px;
+}
+.shop-now-right{
+    background: url(../images/banner-images/banner-5.jpg) 0% 31%;
+    background-size: cover;
+    height: 189px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+}
+.shop-now-right-content{
+    padding:15px 10px;
+}
+.shop-now-right span{
+    background: #fff;
+    width: 145px;
+    height: 2px;
+    display: flex;
+}
+.shop-now-middel span{
+    background: #fff;
+    width: 145px;
+    height: 2px;
+    display: flex;
+}
+.shop-now-left span{
+    background: #fff;
+    width: 145px;
+    height: 2px;
+    display: flex;
+}
+
+
+/* ................................................Trending Section.................................................... */
+
+.trending{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:100px;
+}
+.trending-list ul {
+    display: flex;
+    gap:25px;
+    padding: 5px 0px;
+}
+.trending-list ul li{
+    list-style-type: none;
+}
+.trending-list ul li:nth-child(1){
+    border-bottom:2px solid black;
+}
+.denim-jacket , .shoes, .bag, .printed-sweatshirt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trending-products .product-name{
+    color:#e3d9d7;
+    font-weight: bold;
+}
+.trending .product-details p{
+    margin:0;
+}
+.printed-sweatshirt .product-price span:nth-child(1){
+    color:#ef9099;
+}
+.printed-sweatshirt .product-price span:nth-child(2){
+    color:#e3d9d7;
+}
+.printed-sweatshirt .product-img{
+    position: relative;
+}
+.printed-sweatshirt .product-img::before{
+    position: absolute;
+    content:"Sale";
+    width:50px;
+    height:25px;
+    background-color: #222;
+    color:#d5d5d5;
+    left:0;
+    transform: translate(50%,50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.shoes .product-details .product-name p:nth-child(2){
+    margin:0;
+}
+.trending-products  .quality-img img:nth-child(1){
+    width:35px;
+}  
+.denim-jacket .product-quality .quality-img{
+    width:35px;
+}
+.denim-jacket .product-quality .quality-img-left img{
+    border: 2px solid #dfdfdf;
+}
+.bag .product-quality .quality-img .product-left img{
+    border: 2px solid #dfdfdf;
+}
+.bag .product-price{
+    text-align: center;
+    
+}
+/* ...........................................  Deal Of the Day Section......................................................... */
+.deal-of-the-day{
+    background: url(../images/brands/bg-1.jpg) 49% 0%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+.deal-of-the-day-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.time{
+    display: flex;
+    gap: 25px;
+}
+.time h3{
+    margin:0;
+    color:#c39771;
+    font-weight: bold;
+}
+.deal-of-the-day-content p{
+    color:#c39777;
+    font-weight: bold;
+}
+.product-detail-section{
+    display: flex;
+    padding-top:30px;
+}
+.product-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-price span:nth-child(1){
+    color:#ef9099;
+}
+.product-price span:nth-child(2){
+    color:#e3d9d7;
+}
+.shop-now{
+    padding-top: 0px;
+    
+}
+.border-line span{
+    width: 140px;
+    height: 2px;
+    background-color: black;
+    display: flex;
+}
+/* ...................................................Service Section............................................. */
+.service{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#222;
+    padding:50px 0;
+}
+
+.secure-img img{
+    width:20px;
+}
+.service h6{
+    color:#fff;
+}
+.service span{
+    color:#717176;
+}
+.service span i{
+    color:#c39777;
+}
+.payment-delivery, .return-refund, .secure-payment, .quality-support{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ....................................Arrival Section........................................ */
+.new-arrivals{
+    margin-top: 20px;
+}
+.arrival-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bag-quality .black .black-img img{
+    width:35px;
+    border: 2px solid #dfdfdf;
+}
+.bag-quality .chocolate .chocolate-img img{
+    width:35px;
+}
+.clothing-card, .shoes-card, .bag-card, .denim-jacket-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.clothing-name span, .shoes-name span, .bag-name span, .denim-name span{
+    display: block;
+}
+.clothing-name span:nth-child(1), .shoes-name span:nth-child(1), .bag-name span:nth-child(1), .denim-name span:nth-child(1){
+    color:#e3d9d7;
+}
+.clothing-img{
+    position: relative;
+}
+.clothing-img::before{
+    position: absolute;
+    content: "Sale";
+    width: 50px;
+    height: 25px;
+    background-color: #222;
+    color: #d5d5d5;
+    left: 0;
+    transform: translate(50%,50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+/* .............................................Arrival Bottom......................................................... */
+
+.arrival-bottom-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:30px 0;
+    border-bottom: 1px solid #f3f3f3;
+    
+}
+.new-arrivals{
+    position: relative;
+}
+.jacket-img img{
+    width:30px;
+}
+.chocolate-jacket .jacket-img img{
+    border: 2px solid #dfdfdf;
+}
+.wrap-dress-name span{
+    display: block;
+}
+.wrap-dress-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jacket-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.biker-jacket-name span{
+    display: block;
+}
+.biker-jacket-name span:nth-child(1){
+    color:#e3d9d7;
+}
+.wrap-dress-name span:nth-child(1){
+    color:#e3d9d7;
+}
+.super-skinny-img{
+    position: relative;
+}
+.super-skinny-img::before{
+    position: absolute;
+    content: "Sale";
+    width: 50px;
+    height: 25px;
+    background-color: #222;
+    color: #d5d5d5;
+    left: 0;
+    transform: translate(50%,50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* .......................................................Brands................................................... */
+.brands{
+    padding:60px 0;
+}
+.brands h5{
+    padding:20px 0;
+}
+
+/* ........................................................Newsletter............................................... */
+.newsletter .left{
+    background: url(../images/banner-images/banner-3.jpg) 100% 0%;
+    background-size: cover;
+    height: 249px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.newsletter .left .shop-now-left-content  span{
+    width:90px;
+    height:2px;
+    display: flex;
+    background-color: #fff;
+}
+.newsletter .right{
+    background-color: #fafafa;
+}
+.newsletter .right .right-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right .sign-up .search-here{
+    padding: 10px 0px;
+    border: 1px solid #d8d8d8;
+}
+.sign-up span:nth-child(2){
+    color:#edce99;
+}
+.search-here input[type="search"]{
+    border:none;
+    outline:none;
+    background-color: transparent;
+}
+ input[type="search"]::placeholder{
+    padding:0 10px;
+}
+.newsletter h6{
+    padding:10px 0;
+}
+.subscribe{
+    padding:25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subscribe span:nth-child(2){
+    margin-top: 5px;
+    width: 100px;
+    height: 2px;
+    display: flex;
+    background-color: #222;
+}
+.right h6, .subscribe{
+    text-align: center;
+}
+/* ................................................Instagram Section.................................................. */
+.ansha-instagram{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:100px;
+}
+.ansha-instagram h5{
+    padding:0;
+    margin:0;
+}
+.ansha-instagram h6{
+    color:#babab8;
+    margin-bottom:15px;
+}
+.ansha-instagram .instagram{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+.ansha-instagram .instagram span:nth-child(2){
+    margin-top: 5px;
+    width: 185px;
+    height: 2px;
+    display: flex;
+    background-color: #222;
+}
+.insta-images{
+    display: flex;
+    justify-content: space-between;
+}
+.insta-img img{
+    height: 205px;
+}
+.instagram span:nth-child(1){
+    color:#d8c19b;
+}
+/* ................................................Footer Section..................................................... */
+footer{
+    background-color:  #222222;
+    color:#52575b;
+}
+.footer-top{
+    border-bottom: 1px solid #52575b;
+    padding: 50px 0;
+}
+.anasha-fashion .logo-img{
+    padding:10px 0;
+}
+.anasha-fashion .logo-img img{
+    width:50px;
+}
+.anasha-add p{
+    margin:0;
+}
+.anasha-fashion .social-media{
+    display: flex;
+    justify-content: space-around;
+    padding:10px 0;
+}
+.useful-link ul li, .customer-service  ul li, .my-account ul li{
+    padding: 5px 0;
+    list-style-type: none;
+}
+.anasha-fashion h6{
+    color:#fff;
+}
+ .useful-link .heading, .customer-service .heading, .my-account .heading{
+    padding-left: 30px;
+    color:#fff;
+}
+.footer-bottom{
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-bottom .payment-card{
+    display: flex;
+    gap:20px;
+    padding:15px 0;
+}
+.footer-bottom .payment-card .payment-card-image img{
+    width:35px;
+    height: 20px;
+}
+.footer-bottom .anasha-fashion .logo-img img{
+    width:100px;
+}
+.copy-right{
+    padding:15px 0;
+}
+
+/* ..............................................Responsive section here.............................................. */
+
+
+@media only screen and (max-width:1014px){
+    
+    .slider-middel-banner-left{
+    background: url(../images/banner-images/banner-1.jpg) 0% 50%;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    }
+    .slider-middel-banner-right{
+        background: url(../images/banner-images/banner-2.jpg) 0% 0%;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    }
+}
+@media only screen and (max-width:1200px){
+    .insta-img img{
+        height: 170px;
+    }
+}
+@media only screen and (max-width:992px){
+    .insta-img img{
+        height: 125px;
+    }
+    .slider-section nav{
+        display: none;
+    }
+   
+}
+
+
+@media only screen and (max-width:768px){
+    .slider-middel-banner-left {
+        margin-bottom:20px;
+    }
+    .banners .shop-now-middel{
+        margin:10px 0;
+    }
+    .deal-of-the-day{
+        background: url(../images/brands/bg-1.jpg) 49% 0%;
+        height: 950px;
+        display: flex;
+        justify-content: center;
+    }
+    .deal-of-the-day .product-img{
+        display: flex;
+        justify-content: center;
+    }
+    .product-details{
+        padding: 10px 0;
+    }
+    .service{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #222;
+    padding: 10px 0px;
+    }
+    .payment-delivery, .return-refund, .secure-payment, .quality-support{
+        padding: 10px 0;
+    }
+    .brands .brand-img{
+        padding: 10px 0;
+    }
+    .newsletter .shop-now-left-content{
+        padding:80px 0;
+    }
+    .ansha-instagram{
+        text-align: center;
+    }
+    .insta-images{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .insta-img img{
+        height: 195px;
+        padding:10px 0;
+    }
+    .footer-top{
+        text-align: center;
+    }
+    .anasha-fashion .social-media{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+    .footer-bottom{
+        text-align: center;
+    }
+}
+@media only screen and (max-width:576px){
+     header{
+        display: none;
+     }
+     .stickey-menu{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #d3d3d3;
+        padding: 5px 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        z-index: 1;
+     }
+     .slider{
+        padding:0;
+     }
+}
+
+@media only screen and (max-width:566px){
+
+    .shop-now-left{
+    background: url(../images/banner-images/banner-3.jpg) 100% 0%;
+    background-size: cover;
+    height: 160px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    }
+    .shop-now-middel {
+        background: url(../images/banner-images/banner-4.jpg);
+        background-size: cover;
+        height: 160px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .shop-now-right {
+        background: url(../images/banner-images/banner-5.jpg) 0% 31%;
+        background-size: cover;
+        height: 160px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        display: flex;
+        justify-content: end;
+    }
+    
+}
+@media only screen and (max-width:430px){
+    .banners{
+        padding:0;
+    }
+    .slider-middel-banner-left{
+        background: url(../images/banner-images/banner-1.jpg) 0% 50%;
+        background-size: cover;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        }
+        .slider-middel-banner-right{
+            background: url(../images/banner-images/banner-2.jpg) 0% 0%;
+        background-size: cover;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        }
+        .shop-now-left{
+            background: url(../images/banner-images/banner-3.jpg) 100% 0%;
+            background-size: cover;
+            height: 110px;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            display: flex;
+            justify-content: flex-end;
+            }
+            .shop-now-left-content{
+                padding:0;
+            }
+            .shop-now-left-content .cloth-name p, .cloth-sale-offer h3, .shop-now p{
+                margin:0;
+            }
+            .shop-now-middel {
+                background: url(../images/banner-images/banner-4.jpg);
+                background-size: cover;
+                height: 110px;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            .shop-now-middel-content{
+                padding:0;
+            }
+            .shop-now-middel-content .cloth-name p, .cloth-sale-offer h3, .shop-now p{
+                margin:0;
+            }
+            .shop-now-right {
+                background: url(../images/banner-images/banner-5.jpg) 0% 31%;
+                background-size: cover;
+                height: 110px;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: bold;
+                display: flex;
+                justify-content: end;
+            }
+            .shop-now-right-content .cloth-name p, .cloth-sale-offer h3, .shop-now p{
+                margin:0;
+            }
+            .shop-now-right-content{
+                padding:0;
+            }
+    
+}
+
+
+
