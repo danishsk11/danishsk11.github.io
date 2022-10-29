@@ -1,0 +1,686 @@
+
+body{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+header {
+    margin-top:20px;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+}
+
+.left-header{
+    display: flex;
+}
+.logo{
+    display:flex;
+    align-items: center;
+}
+.logo span{
+    font-weight: bold;
+}
+.logo-img img{
+    width:40px;
+    height:40px;
+}
+.left-header .img-container img{
+    width:50px;
+    height: 50px;
+}
+.left-header .text{
+    padding:15px;
+}
+.left-header .text h2{
+    margin:0;
+}
+.right-header{
+    position: relative;
+   
+}
+.right-header .img-container img{
+    width:25px;
+    height: 25px;
+}
+.right-header{
+    display: flex;
+    margin-top:20px;
+}
+.menu-item{
+    padding-right: 150px;
+}
+/* ............................................Search Bar..................................................... */
+.search-bar{
+    background-color:#fff;
+    padding: 5px 0px;
+    position: relative;
+    background-color: #fbfbfb;
+}
+.search-bar::after{
+    content: "2";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color:#fff;
+    background-color: rgb(230, 0, 0);
+    top: 0;
+    right: 0;
+    transform: translate(50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px rgb(230 0 0);
+}
+.search{
+    display: flex;
+    position: relative;
+    padding: 0px 10px;
+    
+}
+.search input[type="search"]{
+    background-color: transparent;
+    padding-left:10px; 
+   border:none;
+    outline:none;
+    border-right:1px solid #c1bebe;
+    
+}
+.search input[type="search"]::placeholder{
+    padding-left:2px;
+}
+
+.search .search-icon i{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+.cart-img-round img{
+    width:18px;
+    padding-left:5px;
+}
+/* .............................................Search Bar...................................................... */
+
+/* |||||||||||||||||||||||||||||||||||||||||||| Side Menu |||||||||||||||||||||||||||||||||||||||||| */
+
+.side-menu{
+    background: lightgrey;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    transition: .5s ease;
+    transform: translateX(100%);
+    width: 100%;
+}
+.side-menu .name-img{
+    display: flex;
+    justify-content: space-between;
+    padding:0 5px;
+}
+.name-img h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.side-menu .closed-img img{
+    width: 20px;
+    height:20px;
+}
+.closed-img{
+    padding:20px 10px;
+}
+.menu-list ul{
+    margin: 0;
+    padding: 0 15px;
+}
+.menu-list ul li { 
+    list-style: none;
+    padding:10px 0px;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu-list ul li:hover{
+    color:white;
+    cursor: pointer;
+}
+.navigation ul{
+    display: flex;
+    gap:30px;
+}
+.navigation ul li{
+    list-style-type: none;
+}
+ .img-container{
+    display:none;
+}
+.side-menu{
+    display: none;
+}
+
+/* ...............................Hero Section.................................... */
+.bike-delievery{
+    display: flex;
+    align-items: center;
+    background-color: #fcede6;
+    width:180px;
+    border-radius: 25px;
+    padding:3px 0px;
+}
+.bike-delievery span{
+    padding-left:20px;
+    font-weight: bold;
+    color:#bd7135;
+}
+.bike-delievery .bike-img{
+    padding-left:30px;
+}
+.bike-delievery .bike-img img{
+    width:30px;
+   height: 30px;
+   border-radius: 50%;
+}
+.hero-section h1 span{
+    display: block;
+    font-size:60px;
+    font-weight: bold;
+}
+.city span{
+    font-weight: bold;
+}
+.city span:nth-child(2){
+    color:#e05f03;
+}
+.order{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.order-btn button{
+    padding:10px 20px;
+    border:none;
+    background-color: #f89a3a;
+    color:#fff;
+    border-radius:10px;
+}
+.order-process{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.order-process span:nth-child(2){
+    font-weight: bold;
+}
+
+.order .order-process button{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px 0px black;
+}
+.order .order-process button span{
+    clip-path: polygon(100% 47%, 0 0, 0 100%);
+    width:15px;
+    height:15px;
+    background-image:linear-gradient(to left,#d67f28,#ea973e);
+    display: inline-block;
+}
+
+/* ...............................................Item Section......................................... */
+.item-section{
+    margin-top:85px;
+}
+.fast-food{
+    position: relative;
+}
+.fast-food::after{
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 500px;
+    background: linear-gradient(0deg, white, #d6d6d6 80%);
+    bottom: 35px;
+    left: 104px;
+    z-index: -2;
+    border-radius: 25px;
+}
+.card{
+    width:70%;
+   
+}
+.item-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;    
+    padding-top:10px;
+    padding-bottom:25px;
+
+}
+.foodCard{
+    width: 65%;
+}
+.item-img img{
+    width:130px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    filter: drop-shadow(2px 2px 6px rgb(0, 0, 0));
+
+}
+.item-card h2{
+    padding-top: 65px;
+}
+.item-card p{
+    margin:0;
+    padding:0;
+}
+.item-card .price span:nth-child(1){
+    color:red;
+    font-weight: bold;
+}
+.card-btn{
+    position: absolute;
+    transform: translate(-50%,50%);
+    bottom: 0;
+    left: 50%;
+    display: flex;
+    gap: 25px;
+}
+.card-btn .back-btn button{
+    width:30px;
+    height: 30px;
+    border-radius:50%;
+    background-color: #211d3c;
+    color:#fff;
+}
+.card-btn .forward-btn button{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px black;
+    border:none;
+}
+.vegetable,.sushi{
+    margin-top: 80px;
+}
+
+
+
+/*.............................................. Side Menu ......................................................*/
+
+.side-menu{
+    width: 500px;
+    height: 100vh;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .5s ease;
+    transform: translateX(100%);
+
+    /* background: lightgrey;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    transition: .5s ease;
+    transform: translateX(100%);
+    /* display: ; */
+    /* width: 100%; */ 
+}
+.side-menu .name-img{
+    display: flex;
+    justify-content: space-between;
+    padding:0 5px;
+}
+.name-img h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.side-menu .closed-img img{
+    width: 20px;
+    height:20px;
+}
+.closed-img{
+    padding:20px 10px;
+}
+.menu-list ul{
+    margin: 0;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkslategray;
+}
+.menu-list ul li { 
+    list-style: none;
+    padding:10px 0px;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu-list ul li:hover{
+    color:white;
+    cursor: pointer;
+}
+
+/* ....................................Cart Section.............................................................. */
+
+/* ....................................Hamburger Section.......................................................... */
+nav{
+    display:flex;
+    justify-content: space-between;
+}
+
+.left-header{
+    display: flex;
+}
+.left-header .img-container img{
+    width:50px;
+    height: 50px;
+}
+.left-header .text{
+    padding:15px;
+}
+.left-header .text h2{
+    margin:0;
+}
+.right-header{
+    position: relative;
+}
+.right-header .img-container img{
+    width:25px;
+    height: 25px;
+}
+/* ..................................................Cart Section.................................................. */
+
+.cart-section{
+    margin-top: 95px;
+}
+.cart-cards{
+    display: flex;
+}
+.fruit-card{
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 53px;
+    margin-right: 100px;
+}
+.fruit-img{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding-left: 160px;
+    padding-top: 10px;
+    
+}
+.fruit-img img{
+    width:150px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 0;
+    filter: drop-shadow(2px 2px 6px rgb(0, 0, 0));
+}
+.fruit-name{
+    padding-left: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.fruit-name span{
+    font-weight: bold;
+}
+.rating{
+    padding-right: 30px;
+}
+.cart-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 0, 0);
+}
+.cart-img i{
+   color:#fff;
+}
+.price-count{
+    display: flex;
+    padding-left: 60px;
+    width: 190px;
+    justify-content: space-between;
+}
+.add-more{
+    
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 0px 7px;
+}
+
+/* ..................................................Cart Section End............................................... */
+
+
+
+/* ....................................Responsive Section........................................................ */
+@media only screen and (max-width:1326px){
+    .fast-food::after{
+        margin-left: 0px;
+        width:75%;
+    }
+    .foodCard{
+        width: 70%;
+        margin-left: 15px;
+
+    }
+}
+@media only screen and (max-width:1198px){
+    .fast-food::after{
+     
+    }
+    .foodCard{
+        width: 70%;
+        margin-left: 30px;
+
+    }
+}
+@media only screen and (max-width:991px){
+    .fast-food::after{
+      width:85%;
+    }
+    .foodCard{
+        width: 100%;
+        margin-left: 30px;
+    }
+    .cart-section{
+        padding-right:100px;
+    }
+    .cart-cards{
+        display: flex;
+        gap: 66px;
+    }
+    .fruit-card{
+        width:100%;
+    }
+}
+
+
+/* @media only screen and (max-width:767px){
+    .cart-cards{
+        display: flex;
+    }
+    .fruit-card{
+
+    }
+} */
+@media only screen and (max-width:767px){
+    .item-section{
+        margin-top:105px;
+    }
+    .fast-food::after{
+        width: 75%;
+        left: 105px;
+    }   
+    .foodCard{
+        width:65%;
+    }
+    .cart-section{
+        padding:75px;
+    }
+    .cart-cards{
+        display: grid;
+    }
+    .fruit-card{
+
+    }
+}
+@media only screen and (max-width:576px){
+    .item-section{
+        margin-top:85px;
+    }
+    .fast-food::after{
+        width: 70%;
+        left: 105px;
+    }   
+    
+    .foodCard{
+        width:65%;
+    }
+}
+@media only screen and (max-width:574px){
+    .fast-food::after{
+        height: 100%;
+        width: 55%;
+    }
+    .foodCard{
+        width: 35%;
+    }
+    .item-section{
+        margin-top:70px;
+    }
+    .burger{
+        margin-bottom:30px;
+    }
+    .doughnut{
+        margin-top:30px;
+    }
+}
+@media only screen and (max-width:500px){
+    .fast-food::after{
+        height: 100%;
+        width: 55%;
+    }
+    .foodCard{
+        width: 35%;
+    }
+}
+@media only screen and (max-width:472px) {
+    .foodCard{
+        width:50%;
+    }
+}    
+@media only screen and (max-width:332px) {
+    .foodCard{
+        width:70%;
+    }
+    .order-btn button{
+        padding: 10px 10px;
+    }
+}    
+@media only screen and (max-width:313px){
+    .order-btn button{
+        padding: 7px 70px;
+    }
+    .order{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    }
+    .order-process{
+        padding: 1px 35px;
+        background-color:#f89a3a;
+        border-radius:10px;
+    }
+}
+@media only screen and (max-width:234px) {
+    .foodCard{
+        width:70%;
+    }
+    
+}    
+@media only screen and (max-width:190px) {
+    .foodCard{
+        width:50%;
+    }
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (max-width:873px){
+     .navigation{
+        display: none;
+    }
+    .search-bar{
+        display: none;
+    }
+
+}
+@media only screen and (max-width:640px){
+    .side-menu{
+        display: block;
+        width: 100%;
+    }
+    .img-container{
+        display: block;
+    }
+    .search-here{
+        display: block;
+    }
+} 
+
+
+@media only screen and (max-width:767px){
+    .fast-food{
+        margin-top: 110px;
+    }
+} 
+
+/* @media only screen and (max-width:576px){
+    .cart-cards{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:80px;
+    }
+    .fruit-card{
+        margin-bottom: 50px;
+    padding: 8px 40px;
+    }
+} */
+
+
